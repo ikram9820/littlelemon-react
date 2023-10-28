@@ -1,9 +1,16 @@
-import Login from "../sections/loginPages/Login";
+import HeroImage from "../../assets/food/food4.webp";
 
 export default function Order() {
   return (
-    <>
-      <Login />
-    </>
+    <header className="reserve-table">
+      <img
+        className="header-reserve"
+        src={HeroImage}
+        alt="Little Lemon Ingredients"
+      ></img>
+      <div className="reserve-header-text">
+        <h1>Login</h1>
+      </div>
+    </header>
   );
 }

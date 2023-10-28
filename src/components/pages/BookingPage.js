@@ -1,5 +1,6 @@
-import Heading from "../sections/reservePages/Heading";
 import ReservationForm from "../sections/reservePages/BookingForm";
+import HeroImage from "../../assets/food/food4.webp";
+
 import { useReducer } from "react";
 import { fetchAPI } from "../../bookingsAPI";
 export default function BookingPage() {
@@ -13,7 +14,16 @@ export default function BookingPage() {
 
   return (
     <>
-      <Heading />
+      <header className="reserve-table">
+      <img
+        className="header-reserve"
+        src={HeroImage}
+        alt="Little Lemon Ingredients"
+      ></img>
+      <div className="reserve-header-text">
+        <h1>Reserve a table</h1>
+      </div>
+    </header>
       <ReservationForm availableTimes={availableTimes} updateTimes={dispatch} />
     </>
   );

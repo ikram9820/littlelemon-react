@@ -104,9 +104,10 @@ Link:link {
 }
 
 .nav-image {
-  max-height: 4rem;
+  max-height: 3rem;
   margin-top: 0.7rem;
   margin-left: -1.25rem;
+  margin-bottom: 0.7rem;
 }
 
 /* CALL TO ACTION */
@@ -206,10 +207,6 @@ Link:link {
   transition: 0.2s;
 }
 
-.specials-carousel {
-  display: none;
-}
-
 /* TESTIMONIAL CARDS */
 .testimonials {
   padding: 0 5rem 2rem 5rem;
@@ -241,14 +238,6 @@ Link:link {
   width: 3rem;
   height: 3rem;
   object-fit: contain;
-}
-
-.testimonials-carousel {
-  display: none;
-}
-
-.specials-carousel {
-  margin: 0 2rem 0 2rem;
 }
 
 /* ABOUT */
@@ -438,11 +427,9 @@ footer > menu {
   }
 
   .specials-cards {
-    display: none;
-  }
-
-  .specials-carousel {
-    display: block;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2vw;
   }
 
   .menu-card {
@@ -471,14 +458,11 @@ footer > menu {
     font-size: 20px;
   }
 
-  .testimonials-carousel {
-    display: block;
-    background-color: #edefee;
-    padding-bottom: 0;
-  }
-
   .testimonials-cards {
-    display: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2vw;
+    align-items: center;
   }
 
   .testimonial-card > p {
@@ -614,8 +598,4 @@ footer > menu {
     transform: translateY(0);
     opacity: 1;
   }
-}
-
-.carousel > .thumbs-wrapper {
-  display: none;
 }
